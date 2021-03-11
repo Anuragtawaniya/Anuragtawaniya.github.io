@@ -21,6 +21,9 @@ html {
   /* background: black; */
   /* color: #fff; */
 }
+.dev{
+  color:#4608ad;
+}
 .loader_bg {
   position: fixed;
   top: 0;
