@@ -38,3 +38,4 @@ contact.addEventListener('click', () => {
   <p>anuragtawaniya@gmail.com</p>
 </section>`;
 })
+console.log('hello');
