@@ -1,258 +1,2513 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio @Anurag</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="css/style.css" rel="stylesheet">
-
-</head>
-
-<bod>
- <div id="overlay"></div>
-    <header class="bg-hero-codecyan pt-4 pb-4 pb-md-0">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-xxl g-codecyan">
-                <a class="navbar-brand" href="#">
-                    <h1 class="m-0 text-accent-codecyan fw-bold"></h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto my-3 my-lg-0">
-                        <li class="nav-item me-5">
-                            <a class="nav-link active" aria-current="page" href="">Home</a>
-                        </li>
-                        <li class="nav-item me-5">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item me-5">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="btn btn-accent-codecyan btn-lg" href="#resume" role="button">Resume <i
-                                    class="bi bi-download ms-1"></i></a>
-                        </li>
-                    </ul>
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <link rel="stylesheet" data-href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&amp;display=swap" />
+        <meta name="title" content="Anurag - Software Dev" />
+        <link
+            rel="shortcut icon"
+            href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEHEBASBxIQFhUVFhsWGRcTFxIaFxcVFRUYGRsdFxcYICggGRolGxUXIzEhJSstLi4uGCAzODMyNygtLy0BCgoKDg0OGxAQGzAlHyUuLTAuNysvNS4tMC84Ky83Ly0tLS0tLi0tLS01LS0vLS0tMjItLy01Ky0tMC8tLy0tLf/AABEIALwBDQMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUIAgH/xABHEAACAQMBBAYFBwkGBwEAAAAAAQIDBBEFBhIhMQdBUWFxgRMUIpGhMkJSYoKSwRUjQ2Nyk7HC0TRTorKz0jM1VGRzo+Ek/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QALBEBAAEDAwIFAwQDAAAAAAAAAAECAxESITEEQRNRYXHwIoHRMpGh4SNCsf/aAAwDAQACEQMRAD8AqIAEnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPpUpSi5RjJxTScknupvkm+Sz1AfIAAAAAAAAB9OnKKUpKSTzhtPDxzw+Tx3AfIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABd3RbotK90WdO8jmNzOq5drWfRprsa9Gmu9ZKQPSuwdr6nptjCSw/Qwb8ZrefxkYevrxbjHmusxmXnbV9OnpFetb3fy6U3B9+OUl3OLT8zULY6btA40r63XZSq4/wDXJ/GPnEqc02Lvi0RUhXTpnAAC1AAAG3pOnT1avSoWvyqklFPsXNy8Ek35FndJ+lU7TTaMbVYjbzgo/stOHHxck33mDob0HCq31dc80qXgmvSSXmlHykSTpBoesafdrshv+dNqf8pnuV/XCymNpUSDJQoSuJbtPHa22kopc3Jvgku03Y3VLT/7DGNSf97VjmKf6qk+H2p5fci+Z8kMPiy0e4vlm2pTcfpPEY/elhPyNxbNVf0ta0j3Orx+COZd3tW9ebupOf7TbXkuSNfBCYuT3iPt8/4lmnydyeytzjND0NT/AMc0/wCKSOTc207SW7cwlF9kk17u3yPijUlQeaDcX2xbT96JDp2uq9Soa8lOEuCm/lRb5Za/zLiiEzdo3neP2l2Ipq9EcB0Nc0x6VV3W8xfGMu1d/ev6HPLqaoqjMcITExOJAAdcAAAAAAAAAAAAAAAAD8bxzN60taXytRqOMfo00p1ZeCbUYeMn5M61ttPT0rH5Cs7eEl+luM16vim8Rg+5LBGap7RlKI83LsdBu9US9Qt7ialylGnPd49e9jHxPT1rSVCMIQ5RSivCKx+B52uNv9UqvMryce6MaUUvdEx0tvdTpv2L6t5+ifwcTH1HT3b2OIx7/hZRXTQ9B63p0NWoVaF0sxqRcX3Z5Nd6eGu9HmTUrOemVqlC84TpycX34eMrufNdzJdZdKepW+PTyo1V+sppN+dNxO7R6TrTVVubSWaw+GUo1YecZJNeWSuxbvdPnbVHpKdU0XO+FWAtaeyej7TJy0Cqqc+eKUuX7VGfFLwwRbWujy907MraKrwXXSzv+dN8fKOTTR1duqdM7T5TshVZqiM8x6IkbGm2M9TrUqFoszqzUI+MnzfcllvuRglFwbU001waaaafY0+TLR6ENA9NVq31wuFPNKln6cl7cl4Rajn60jTM4VLMsdNho9vSt7T5NKCgu/HNvvby33s5msUPWqVWm/nwlH70WvxNp67Tur64s6WHKjThOTz86bfs47Ut1/aPi6MV7Zdbeb4VnuKK4J4b72uWe5dh8m5rND1W5uIP5tWaXhvvHwwaZtic7qAAAAABJ71+v6bTqVPlU3jPhLc/g0yMEpUfQaS9/wCc8r7VVY+CyRYz9NxVHbVK2729oAAaFQAAAAAAAAAAAAAAEq2C2Te0lVyusq3pv22uDnLmoRfVw4t9S5cXlRrriinVU7TEzOIaGzWyt1tJL/8ABDEE8OrPKgu5P50u5eeCytM6MbDTI+k1yrKrji3OSpUljuTTx4yZg2t27pbOr1TZ2FN1ILdbx+ao4+akvlSXZyXXnkVXqep19Wnv6nVqVJfXeUv2Y8o+SRkjxr2+dMfytnRR6yvjQYaJcVfQ6LCwnUUXLFOnCfsxaTbnhrnJdfWb+v1NL0SMHrVO1gptxjvUYtNpZfyYvHDtK86Crbfr3lR/Npwgvtyk3/poy9PFxmpY00+UKk2vFwiv8sjJNnPUeHmfkLNf0asJXQ2e0XaKEp6fQtKkc7rlRW608Zw3DDTwzi6n0U2dbPqFSvSfZlVI+6Xtf4iIdFGu/kq99DWf5u5xDuVRZ3H55cftLsLsqFd+bvT14iqcdltqKLlOZhSWqdG19pz37BwrbvFOnLcqLwUnw8pDS9u9Q2fmqerRlUS+ZXUoVUu6eMvzTLA202iq7NOjUVGNSjN7kuLjOE+aafFNNJ8Mc1z4mtYbUaZtRFUr30eX+juYxXH6sn7Lfg8l1F+5XTE3KNUecc/P2cm3TTOKKsSxUNW0bbpKGpRjCs+CVX83Vz2QqrhLwz5E30nTo7O2ao6XCU1Spy3Y5jvVJcZcXwW9KT58Fx6ivdc6KaF0nLRKjpP6FTM6b8JfKj/i8Dg0tR1vYBpXKnKiuqpmrQx9Wovap+GV4Gu1omPon7Sor1R+qGXo7rXFHWq35ahUhWr06rnGopRbk5wqPCfV7LxjqLPuyKaZ0pWWpuH5YpOjUjyk16SCbWHuzS3o8G+a8ySQvqWoR37GpTqRfXCUZL4HOozyW1KbeUPQahcfW3Z++C/FM4BYHSFs/cX9xGtYU99ejUZYcE04yk+Ums8GuRDp6JdQ4St633ZP4ottXaNEbwhXROqdmgDq2+zd3XfCjKK7ZuMUvJvPwMtWyt9J/ts1WqL9FTeIJ/Xn+C49xOb1GcROZ9N3NE93KhQbjv1OEeSf0n2R7e99QtLeV3OFOjzk8Lu7X4JcfI/bq5neSTq47FGKxGK6oxiuS7iXaFpkdEpTuNT4Sxy64R7O+T/+ELt3w6czzPEO0Uap9GrtjWjbU6FvR6km19WK3Y58ePuIqbOo3ktQqzqVfnPguxLkvcaxKxb0URE893LlWqrIAC1AAAAAAAAAAAAAAEnLhBZb4JdrfIuHWrhbC6TTpWbxWktxS/WSTlUn5ccd+6Vfs3SVa9s4y5OvT/1Ikw6ZLhyuLWn1Rpyl5znj+Qy3o13KaJ45XUbUzUr5vPP4/iADUpXR0HW3o7O4qNfLr4XfGFOP4ykRLppuPTamor9HQpx83Kc/4TRZHRVa+q6Va5+fvVPv1JNfDBUHSTces6tevsmoL7FOEf4pnm2Pq6qufdor2txCORk4NODaaeU1zTXJrvTPQ+yetLX7OjX4bzW7UXZUjwl5N8V3NHncnPRPr35OunbV3+buOXYq0V7P3lleO6W9dZ8S3mOY+S509emrHmtHaLS46zbVaFb58cJ/RkuMZeTSZ56qWlSFR0ZwfpFP0e517+9u4+9wPSlQiz2ShU1SF9w3VDLj+vXsqXhuv3xTMHRdT4WaZ45j3/tr6izrxMOtplKGyOnR9ak3G3pb03lvelzeM9snhLwRwNn+li1vEoa5TlQb4OS/OUn44W9HzTXecnpi13CpWVB88Vavgm9yL805fZj2lXHo9PazTqq5lku14nEL61LYLStp4em0zcg5cfSWko7j8YcYfBPvIDqvRlf6TJz0mpCqlydOTpVfc3j3SIVZX1bTpb+nValKf0qcpRbx245rufA9H6fd+v21vVTz6SlCf34J/iXVzNMK6Yyou41PVdJ4XkrqCX97DeX35xefJmu9sLuS4VYeKhT/AKFz7QalDSaUqt3vbkcJ7qy/akorh4shtfa3TK/GXP61GX+0zTVE7+Hn57LYiY/2wr241i4v/Zr1qks/NTwn9mOEzY0/Zy5vcblNxj9Kp7K93N+SJbU2vsrfPq0ZvuhTUf8ANg5F/ttUq5VjTjD603vP3cl8TsXL07UW9Pv+NnJpojeqrLo2mk22zkfS30lKa5Skuvspx7fiRjXtbnq0uuNNfJj+Mu1/wOfdXU7uW9dTlKXbJ/w7F4GIttWNM665zV84RruZjTTtAADQqAAAAAAAAAAAAAAAAbWlXPqVxQqvlTqwm/CM038Eyd9Mdq/SWlaPyZQlTz3pqS96lL3Fc8y09Fa240mVrNr1i3SUXLthn0cn3SjmLfbkzX/pqpudo2n7rbe8TSq0/JPdTZkqUJ0punVjJTUt1xw95SzjGO3PUSHZnY271i4pQr29eFLeTqTqQnCKgnmSTklltLCS7S+qummMzKuImeF9bN2nqFpa0voUacfNQSfxPN2uXHrd1dVH8+tUl5OpJr4YPUMTzdqmxuoaXOUbi1uJYbSnThKcZLPNOGcZ54fE8zoKo1VTM7y0XonEYcI/YTdNp0200001zTTymu9MVIOm3GommnhpppprmmnyZ+Hqsz0Bsrra1+0pVuG9jdqJdVSOFLyfNdzR0bq7hYUqlW5eIU4ucn3RWX5lP9GOvfkq6dG4eKdxiPHlGqvkPuznd849hIOlrXPRU6dnQfGeKlTHVCL9lecln7PeeHV0sx1GiOJ3+z0qb/8Ai1TyrnV9Rnq1erXuflVJOWOxclHwSSXkagB7kRiMQ84L+2AuPWdKs2vm09z93KUP5SgS9OjOyq2WmUVdxcd6UqkU/wC7qPei+7Oc47yq9+lKjl97bUPWbG7iuL9FKS8YLeXxiUQejLyO+mpLg1jyZSetbIXOm1Jq3pzqU0/ZlD2nu9SlFe0ml3FHT3KYzTMp3KZneEfBkr287fHrEJxzy34yjnwyjGbInKkAAAAAAAAAAAAAAAAAAAAADe0TV6uh14V7B4lHg0/kyi+cZLrT/o+o0QJiJjEu8LSurG06Q4qvos1QvYJOUJPDbjyzji0mlipHlwyuGFEtbvtX0aW5q1e9p9Sbq1N2X7M08S8mRylVlRkpUZSjKPFSi2pJ9zXFEy0zpLvbaPo9SjRuYcsVo4k/GS4PzTM3hVUfp+qPKeY9pWaonnaUcW0F6nlXd3++rf7jPHavUI8r27/e1P6kgqbSaLef27SJQf8A29TdXui4L4GvV1XQo/8AA027b+vczivepM7qjvbn+Py5j1RGrUlWk5Vm5Sk225Nttvm23zZmsbGrqLxYU6lTHPci2l4tcI+Z3au01vR/5TpljTfVKtv3El4ek4JnL1PXbrVVu31aco9UFiNNeFOGI/Atia57Y9/6/KOI82OrZQtOF5Ui5fQotTaf1qi9iPk5PuRr3VxK6m51nKUnzcpSlJ4WFmT4vgjECUQ5kAB1wNijfVqCxQrVorshUqRXuTNcAby1m6jyubn97V/Fn7+XLv8A6m4/eT/qaAOTTE9ncyzXV5UvGnd1Jza5b0m8eGTCAdiIjgAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//Z"
+        />
+        <meta name="description" content="Hey there, This is Anurag. I am a Software developer who  works on Front-End, Back-End, &amp; Web3." />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Anurag - Software Dev" />
+        <meta property="og:description" content="Hey there, This is Anurag. I am a Software developer who  works on Front-End, Back-End, &amp; Web3." />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Anurag- Software Dev" />
+        <meta property="twitter:description" content="Hey there, This is Anurag. I am a Software developer who  works on Front-End, Back-End, &amp; Web3." />
+        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8" />
+        <title>Anurag - Software Dev</title>
+        <meta name="next-head-count" content="3" />
+        <noscript data-n-css=""></noscript>
+        <link rel="preload" href="/_next/static/chunks/webpack-189c53927ffd3caf09c3.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/framework-92300432a1172ef1338b.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/main-71948af4b0f09c0fc30e.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/pages/_app-94471bebfc126e3cb1ed.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/d0447323-6003fb0c88d5db50766e.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/95b64a6e-4837f896f516a58e8f77.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/70b165ca-decf29ddf1716276a3dd.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/d7eeaac4-ffe659128ba47ca287a4.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/pages/index-44710a0633a3e48d5727.js" as="script" />
+        <style data-styled="" data-styled-version="5.3.0">
+            html {
+                line-height: 1.15;
+                -webkit-text-size-adjust: 100%;
+            } /*!sc*/
+            body {
+                margin: 0;
+            } /*!sc*/
+            main {
+                display: block;
+            } /*!sc*/
+            h1 {
+                font-size: 2em;
+                margin: 0.67em 0;
+            } /*!sc*/
+            hr {
+                box-sizing: content-box;
+                height: 0;
+                overflow: visible;
+            } /*!sc*/
+            pre {
+                font-family: monospace, monospace;
+                font-size: 1em;
+            } /*!sc*/
+            a {
+                background-color: transparent;
+            } /*!sc*/
+            abbr[title] {
+                border-bottom: none;
+                -webkit-text-decoration: underline;
+                text-decoration: underline;
+                -webkit-text-decoration: underline dotted;
+                text-decoration: underline dotted;
+            } /*!sc*/
+            b,
+            strong {
+                font-weight: bolder;
+            } /*!sc*/
+            code,
+            kbd,
+            samp {
+                font-family: monospace, monospace;
+                font-size: 1em;
+            } /*!sc*/
+            small {
+                font-size: 80%;
+            } /*!sc*/
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            } /*!sc*/
+            sub {
+                bottom: -0.25em;
+            } /*!sc*/
+            sup {
+                top: -0.5em;
+            } /*!sc*/
+            img {
+                border-style: none;
+            } /*!sc*/
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                font-family: inherit;
+                font-size: 100%;
+                line-height: 1.15;
+                margin: 0;
+            } /*!sc*/
+            button,
+            input {
+                overflow: visible;
+            } /*!sc*/
+            button,
+            select {
+                text-transform: none;
+            } /*!sc*/
+            button,
+            [type="button"],
+            [type="reset"],
+            [type="submit"] {
+                -webkit-appearance: button;
+            } /*!sc*/
+            button::-moz-focus-inner,
+            [type="button"]::-moz-focus-inner,
+            [type="reset"]::-moz-focus-inner,
+            [type="submit"]::-moz-focus-inner {
+                border-style: none;
+                padding: 0;
+            } /*!sc*/
+            button:-moz-focusring,
+            [type="button"]:-moz-focusring,
+            [type="reset"]:-moz-focusring,
+            [type="submit"]:-moz-focusring {
+                outline: 1px dotted ButtonText;
+            } /*!sc*/
+            fieldset {
+                padding: 0.35em 0.75em 0.625em;
+            } /*!sc*/
+            legend {
+                box-sizing: border-box;
+                color: inherit;
+                display: table;
+                max-width: 100%;
+                padding: 0;
+                white-space: normal;
+            } /*!sc*/
+            progress {
+                vertical-align: baseline;
+            } /*!sc*/
+            textarea {
+                overflow: auto;
+            } /*!sc*/
+            [type="checkbox"],
+            [type="radio"] {
+                box-sizing: border-box;
+                padding: 0;
+            } /*!sc*/
+            [type="number"]::-webkit-inner-spin-button,
+            [type="number"]::-webkit-outer-spin-button {
+                height: auto;
+            } /*!sc*/
+            [type="search"] {
+                -webkit-appearance: textfield;
+                outline-offset: -2px;
+            } /*!sc*/
+            [type="search"]::-webkit-search-decoration {
+                -webkit-appearance: none;
+            } /*!sc*/
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button;
+                font: inherit;
+            } /*!sc*/
+            details {
+                display: block;
+            } /*!sc*/
+            summary {
+                display: list-item;
+            } /*!sc*/
+            template {
+                display: none;
+            } /*!sc*/
+            [hidden] {
+                display: none;
+            } /*!sc*/
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            } /*!sc*/
+            html {
+                font-size: 62.5%;
+                -webkit-scroll-behavior: smooth;
+                -moz-scroll-behavior: smooth;
+                -ms-scroll-behavior: smooth;
+                scroll-behavior: smooth;
+            } /*!sc*/
+            body {
+                font-family: Open Sans, sans-serif;
+                font-size: 1.6rem;
+                background: #0f1624;
+                color: hsl(204, 23.8%, 95.9%);
+                cursor: default;
+            } /*!sc*/
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            button {
+                font-family: Open Sans, sans-serif;
+            } /*!sc*/
+            a {
+                -webkit-text-decoration: none;
+                text-decoration: none;
+            } /*!sc*/
+            li {
+                list-style: none;
+            } /*!sc*/
+            data-styled.g2[id="sc-global-jSzTTJ1"] {
+                content: "sc-global-jSzTTJ1,";
+            } /*!sc*/
+            .bjnpGk {
+                display: grid;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                padding: 32px 48px 0;
+                margin: 0 auto;
+                max-width: 1040px;
+                box-sizing: content-box;
+                position: relative;
+                overflow: hidden;
+                grid-template-columns: 1fr 1fr;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .bjnpGk {
+                    padding: 24px 48px 0;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .bjnpGk {
+                    padding: 16px 16px 0;
+                    width: calc(100vw - 32px);
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            } /*!sc*/
+            .cgQFVO {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                padding: 0;
+                margin: 0 auto;
+                max-width: 1040px;
+                box-sizing: content-box;
+                position: relative;
+                overflow: hidden;
+                grid-template-columns: 1fr 1fr;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .cgQFVO {
+                    padding: 24px 48px 0;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .cgQFVO {
+                    padding: 0;
+                    width: calc(100vw - 32px);
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            } /*!sc*/
+            .cFQNhz {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                padding: 32px 48px 0;
+                margin: 0 auto;
+                max-width: 1040px;
+                box-sizing: content-box;
+                position: relative;
+                overflow: hidden;
+                grid-template-columns: 1fr 1fr;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .cFQNhz {
+                    padding: 24px 48px 0;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .cFQNhz {
+                    padding: 16px 16px 0;
+                    width: calc(100vw - 32px);
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            } /*!sc*/
+            data-styled.g3[id="GlobalComponents__Section-sc-6qzy6y-0"] {
+                content: "bjnpGk,cgQFVO,cFQNhz,";
+            } /*!sc*/
+            .iwASPi {
+                font-weight: 800;
+                font-size: 65px;
+                line-height: 72px;
+                width: -webkit-max-content;
+                width: -moz-max-content;
+                width: max-content;
+                max-width: 100%;
+                background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 16px;
+                padding: 58px 0 16px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .iwASPi {
+                    font-size: 56px;
+                    line-height: 56px;
+                    margin-bottom: 12px;
+                    padding: 40px 0 12px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .iwASPi {
+                    font-size: 32px;
+                    line-height: 40px;
+                    font-size: 28px;
+                    line-height: 32px;
+                    margin-bottom: 8px;
+                    padding: 16px 0 8px;
+                    max-width: 100%;
+                }
+            } /*!sc*/
+            .ktbJnW {
+                font-weight: 800;
+                font-size: 56px;
+                line-height: 67px;
+                width: -webkit-max-content;
+                width: -moz-max-content;
+                width: max-content;
+                max-width: 100%;
+                background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 16px;
+                padding: 0;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .ktbJnW {
+                    font-size: 48px;
+                    line-height: 48px;
+                    margin-bottom: 12px;
+                    padding: 0;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .ktbJnW {
+                    font-size: 32px;
+                    line-height: 40px;
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-bottom: 8px;
+                    padding: 0;
+                    max-width: 100%;
+                }
+            } /*!sc*/
+            data-styled.g4[id="GlobalComponents__SectionTitle-sc-6qzy6y-1"] {
+                content: "iwASPi,ktbJnW,";
+            } /*!sc*/
+            .gPILqT {
+                max-width: 800px;
+                font-size: 24px;
+                line-height: 40px;
+                font-weight: 300;
+                padding-bottom: 3.6rem;
+                color: rgba(255, 255, 255, 0.5);
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .gPILqT {
+                    max-width: 670px;
+                    font-size: 20px;
+                    line-height: 32px;
+                    padding-bottom: 24px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .gPILqT {
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-bottom: 16px;
+                }
+            } /*!sc*/
+            data-styled.g5[id="GlobalComponents__SectionText-sc-6qzy6y-2"] {
+                content: "gPILqT,";
+            } /*!sc*/
+            .idtsIY {
+                width: 64px;
+                height: 6px;
+                border-radius: 10px;
+                background-color: #fff;
+                background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .idtsIY {
+                    width: 48px;
+                    height: 4px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .idtsIY {
+                    width: 32px;
+                    height: 2px;
+                }
+            } /*!sc*/
+            .ircPKK {
+                width: 64px;
+                height: 6px;
+                border-radius: 10px;
+                background-color: #fff;
+                background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+                margin: 4rem 0;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .ircPKK {
+                    width: 48px;
+                    height: 4px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .ircPKK {
+                    width: 32px;
+                    height: 2px;
+                }
+            } /*!sc*/
+            .enlhcM {
+                width: 64px;
+                height: 6px;
+                border-radius: 10px;
+                background-color: #fff;
+                background: linear-gradient(270deg, #f46737 0%, #945dd6 100%);
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .enlhcM {
+                    width: 48px;
+                    height: 4px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .enlhcM {
+                    width: 32px;
+                    height: 2px;
+                }
+            } /*!sc*/
+            data-styled.g6[id="GlobalComponents__SectionDivider-sc-6qzy6y-3"] {
+                content: "idtsIY,ircPKK,enlhcM,";
+            } /*!sc*/
+            .jlrszi {
+                width: 262px;
+                height: 64px;
+                border-radius: 50px;
+                font-size: 24px;
+                font-weight: 600;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                margin: 0 0 80px;
+                color: #fff;
+                background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
+                cursor: pointer;
+                -webkit-transition: 0.5s ease;
+                transition: 0.5s ease;
+                position: relative;
+                overflow: hidden;
+                opacity: 1;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .jlrszi {
+                    width: 184px;
+                    height: 48px;
+                    font-size: 16px;
+                    margin-bottom: 64px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .jlrszi {
+                    width: 100%;
+                    height: 32px;
+                    font-size: 14px;
+                    margin-bottom: 32px;
+                }
+            } /*!sc*/
+            data-styled.g9[id="GlobalComponents__ButtonBack-sc-6qzy6y-6"] {
+                content: "jlrszi,";
+            } /*!sc*/
+            .evTffm {
+                border: none;
+                border-radius: 50px;
+                color: #fff;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+                opacity: 1;
+                -webkit-transition: 0.4s ease;
+                transition: 0.4s ease;
+                font-size: 24px;
+                font-weight: 600;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: none;
+            } /*!sc*/
+            .evTffm:hover {
+                opacity: 0;
+            } /*!sc*/
+            .evTffm:focus {
+                outline: none;
+            } /*!sc*/
+            .evTffm:active {
+                opacity: 1;
+                box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+            } /*!sc*/
+            .evTffm:disabled {
+                background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
+                opacity: 0.5;
+                box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .evTffm {
+                    font-size: 16px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .evTffm {
+                    font-size: 14px;
+                }
+            } /*!sc*/
+            data-styled.g10[id="GlobalComponents__ButtonFront-sc-6qzy6y-7"] {
+                content: "evTffm,";
+            } /*!sc*/
+            .kzaJlY {
+                color: #18c5dd;
+            } /*!sc*/
+            data-styled.g13[id="GlobalComponents__Link-sc-6qzy6y-10"] {
+                content: "kzaJlY,";
+            } /*!sc*/
+            .dAKHQi {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+                margin: 24px 0 40px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .dAKHQi {
+                    gap: 16px;
+                    margin: 20px 0 32px;
+                    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .dAKHQi {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                    max-width: 500px;
+                    margin: 24px auto;
+                }
+            } /*!sc*/
+            data-styled.g14[id="AcomplishmentsStyles__Boxes-sc-vuq5bz-0"] {
+                content: "dAKHQi,";
+            } /*!sc*/
+            .bgepbk {
+                background: #212d45;
+                border-radius: 12px;
+                height: 144px;
+                padding: 24px;
+            } /*!sc*/
+            @media screen and (max-width: 1024px) {
+                .bgepbk {
+                    height: 210px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .bgepbk {
+                    height: 135px;
+                    padding: 16px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .bgepbk {
+                    height: 110px;
+                    padding: 12px;
+                }
+                .bgepbk:nth-child(2n) {
+                    grid-row: 2;
+                }
+            } /*!sc*/
+            data-styled.g15[id="AcomplishmentsStyles__Box-sc-vuq5bz-1"] {
+                content: "bgepbk,";
+            } /*!sc*/
+            .jhUPFM {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 40px;
+                -webkit-letter-spacing: 0.01em;
+                -moz-letter-spacing: 0.01em;
+                -ms-letter-spacing: 0.01em;
+                letter-spacing: 0.01em;
+                color: #ffffff;
+                margin-bottom: 8px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .jhUPFM {
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .jhUPFM {
+                    font-size: 24px;
+                    line-height: 26px;
+                }
+            } /*!sc*/
+            data-styled.g16[id="AcomplishmentsStyles__BoxNum-sc-vuq5bz-2"] {
+                content: "jhUPFM,";
+            } /*!sc*/
+            .bdNxwa {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                -webkit-letter-spacing: 0.02em;
+                -moz-letter-spacing: 0.02em;
+                -ms-letter-spacing: 0.02em;
+                letter-spacing: 0.02em;
+                color: rgba(255, 255, 255, 0.75);
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .bdNxwa {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .bdNxwa {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            } /*!sc*/
+            data-styled.g17[id="AcomplishmentsStyles__BoxText-sc-vuq5bz-3"] {
+                content: "bdNxwa,";
+            } /*!sc*/
+            .ijISIQ {
+                width: 100%;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .ijISIQ {
+                    width: 80%;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    margin: 0 auto;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .ijISIQ {
+                    width: 100%;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    margin: 0 auto;
+                }
+            } /*!sc*/
+            data-styled.g21[id="HeroStyles__LeftSection-sc-pbjia3-0"] {
+                content: "ijISIQ,";
+            } /*!sc*/
+            .MtfvO {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+            } /*!sc*/
+            data-styled.g22[id="ProjectsStyles__Img-sc-l76idc-0"] {
+                content: "MtfvO,";
+            } /*!sc*/
+            .juGfGz {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                place-items: center;
+                -webkit-column-gap: 1rem;
+                column-gap: 1rem;
+                row-gap: 3rem;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .juGfGz {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    padding: 2rem;
+                    padding-bottom: 1.5rem;
+                }
+            } /*!sc*/
+            data-styled.g23[id="ProjectsStyles__GridContainer-sc-l76idc-1"] {
+                content: "juGfGz,";
+            } /*!sc*/
+            .ibufTt {
+                border-radius: 10px;
+                box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+                text-align: center;
+                width: 400px;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .ibufTt {
+                    width: 100%;
+                }
+            } /*!sc*/
+            data-styled.g24[id="ProjectsStyles__BlogCard-sc-l76idc-2"] {
+                content: "ibufTt,";
+            } /*!sc*/
+            .fWUATX {
+                text-align: center;
+                z-index: 20;
+                width: 100%;
+                margin-top: 4rem;
+                margin-bottom: 0.7em;
+                color: #9cc9e3;
+                font-size: 1.8rem;
+            } /*!sc*/
+            data-styled.g25[id="ProjectsStyles__TitleContent-sc-l76idc-3"] {
+                content: "fWUATX,";
+            } /*!sc*/
+            .bRwuck {
+                font-weight: 500;
+                -webkit-letter-spacing: 2px;
+                -moz-letter-spacing: 2px;
+                -ms-letter-spacing: 2px;
+                letter-spacing: 2px;
+                color: #9cc9e3;
+                padding: 0.5rem 0;
+                margin-top: 1rem;
+                font-size: 3rem;
+            } /*!sc*/
+            data-styled.g26[id="ProjectsStyles__HeaderThree-sc-l76idc-4"] {
+                content: "bRwuck,";
+            } /*!sc*/
+            .jPLFtu {
+                width: 50px;
+                height: 3px;
+                margin: 8px auto;
+                border: 0;
+                background: #d0bb57;
+            } /*!sc*/
+            data-styled.g27[id="ProjectsStyles__Hr-sc-l76idc-5"] {
+                content: "jPLFtu,";
+            } /*!sc*/
+            .hPLaA {
+                width: 100%;
+                padding: 0 50px;
+                color: #e4e6e7;
+                font-style: 2rem;
+                line-height: 24px;
+                text-align: center;
+                margin-top: 2rem;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .hPLaA {
+                    padding: 0.3rem;
+                }
+            } /*!sc*/
+            data-styled.g29[id="ProjectsStyles__CardInfo-sc-l76idc-7"] {
+                content: "hPLaA,";
+            } /*!sc*/
+            .eyVPfb {
+                list-style-type: none;
+                padding: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: space-around;
+                -webkit-justify-content: space-around;
+                -ms-flex-pack: space-around;
+                justify-content: space-around;
+                margin: 2.5rem 0;
+            } /*!sc*/
+            data-styled.g30[id="ProjectsStyles__UtilityList-sc-l76idc-8"] {
+                content: "eyVPfb,";
+            } /*!sc*/
+            .gbNcjK {
+                color: #d4c0c0;
+                font-size: 1.6rem;
+                padding: 1rem 1.5rem;
+                background: #6b3030;
+                border-radius: 15px;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+            } /*!sc*/
+            .gbNcjK:hover {
+                background: #801414;
+            } /*!sc*/
+            data-styled.g31[id="ProjectsStyles__ExternalLinks-sc-l76idc-9"] {
+                content: "gbNcjK,";
+            } /*!sc*/
+            .cbeJFc {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: space-around;
+                -webkit-justify-content: space-around;
+                -ms-flex-pack: space-around;
+                justify-content: space-around;
+                padding: 2rem;
+            } /*!sc*/
+            data-styled.g32[id="ProjectsStyles__TagList-sc-l76idc-10"] {
+                content: "cbeJFc,";
+            } /*!sc*/
+            .jSKGRH {
+                color: #d8bfbf;
+                font-size: 1.5rem;
+            } /*!sc*/
+            data-styled.g33[id="ProjectsStyles__Tag-sc-l76idc-11"] {
+                content: "jSKGRH,";
+            } /*!sc*/
+            .YemMf {
+                list-style-type: none;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+                margin-bottom: 4rem;
+            } /*!sc*/
+            @media screen and (max-width: 1024px) {
+                .YemMf {
+                    margin: 64px 0;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .YemMf {
+                    margin: 64px 0;
+                    gap: 24px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .YemMf {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    padding: 15px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 450px) {
+                .YemMf {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            } /*!sc*/
+            data-styled.g36[id="TechnologiesStyles__List-sc-1ehw0pq-2"] {
+                content: "YemMf,";
+            } /*!sc*/
+            .dPpGTk {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                margin-left: 18px;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .dPpGTk {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin-left: 18px;
+                }
+            } /*!sc*/
+            data-styled.g37[id="TechnologiesStyles__ListContainer-sc-1ehw0pq-3"] {
+                content: "dPpGTk,";
+            } /*!sc*/
+            .hZLVWF {
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 32px;
+                -webkit-letter-spacing: 0.02em;
+                -moz-letter-spacing: 0.02em;
+                -ms-letter-spacing: 0.02em;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+                margin-bottom: 8px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .hZLVWF {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .hZLVWF {
+                    font-size: 20px;
+                    line-height: 28px;
+                    -webkit-letter-spacing: 0.02em;
+                    -moz-letter-spacing: 0.02em;
+                    -ms-letter-spacing: 0.02em;
+                    letter-spacing: 0.02em;
+                    margin-bottom: 4px;
+                }
+            } /*!sc*/
+            data-styled.g38[id="TechnologiesStyles__ListTitle-sc-1ehw0pq-4"] {
+                content: "hZLVWF,";
+            } /*!sc*/
+            .fpHcvC {
+                font-size: 18px;
+                line-height: 30px;
+                color: rgba(255, 255, 255, 0.75);
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .fpHcvC {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .fpHcvC {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            } /*!sc*/
+            data-styled.g39[id="TechnologiesStyles__ListParagraph-sc-1ehw0pq-5"] {
+                content: "fpHcvC,";
+            } /*!sc*/
+            .dnnCMa {
+                max-width: 320px;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .dnnCMa {
+                    max-width: 203px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .dnnCMa {
+                    margin-bottom: 14px;
+                    max-width: 320px;
+                }
+            } /*!sc*/
+            data-styled.g40[id="TechnologiesStyles__ListItem-sc-1ehw0pq-6"] {
+                content: "dnnCMa,";
+            } /*!sc*/
+            .bomSZk {
+                max-width: 1040px;
+                background: #0f1624;
+                padding: 0rem;
+                list-style: none;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                margin-left: 32px;
+                margin-bottom: 80px;
+                -webkit-scrollbar-width: none;
+                -moz-scrollbar-width: none;
+                -ms-scrollbar-width: none;
+                scrollbar-width: none;
+            } /*!sc*/
+            .bomSZk:first-of-type {
+                margin-left: 0px;
+            } /*!sc*/
+            .bomSZk::-webkit-scrollbar {
+                display: none;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .bomSZk {
+                    overflow-x: scroll;
+                    -webkit-overflow-scrolling: touch;
+                    -webkit-scroll-snap-type: x mandatory;
+                    -moz-scroll-snap-type: x mandatory;
+                    -ms-scroll-snap-type: x mandatory;
+                    scroll-snap-type: x mandatory;
+                    touch-action: pan-x;
+                    -webkit-box-pack: initial;
+                    -webkit-justify-content: initial;
+                    -ms-flex-pack: initial;
+                    justify-content: initial;
+                    margin-bottom: 8px;
+                }
+            } /*!sc*/
+            data-styled.g42[id="TimeLineStyles__CarouselContainer-sc-vs8qb6-0"] {
+                content: "bomSZk,";
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .bzTOLS {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    min-width: -webkit-min-content;
+                    min-width: -moz-min-content;
+                    min-width: min-content;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .kudGWZ {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    min-width: 120%;
+                }
+            } /*!sc*/
+            data-styled.g43[id="TimeLineStyles__CarouselMobileScrollNode-sc-vs8qb6-1"] {
+                content: "bzTOLS,kudGWZ,";
+            } /*!sc*/
+            .lgwuKa {
+                background: #0f1624;
+                border-radius: 3px;
+                max-width: 196px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .lgwuKa {
+                    max-width: 124px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .lgwuKa {
+                    margin-left: 32px;
+                    min-width: 120px;
+                    background: #0f1624;
+                    padding: 4px;
+                    -webkit-align-content: start;
+                    -ms-flex-line-pack: start;
+                    align-content: start;
+                    -webkit-scroll-snap-align: start;
+                    -moz-scroll-snap-align: start;
+                    -ms-scroll-snap-align: start;
+                    scroll-snap-align: start;
+                    border-radius: 3px;
+                    overflow: visible;
+                    position: relative;
+                    height: -webkit-fit-content;
+                    height: -moz-fit-content;
+                    height: fit-content;
+                    opacity: 1;
+                }
+            } /*!sc*/
+            .fzVJks {
+                background: #0f1624;
+                border-radius: 3px;
+                max-width: 196px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .fzVJks {
+                    max-width: 124px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .fzVJks {
+                    margin-left: 32px;
+                    min-width: 120px;
+                    background: #0f1624;
+                    padding: 4px;
+                    -webkit-align-content: start;
+                    -ms-flex-line-pack: start;
+                    align-content: start;
+                    -webkit-scroll-snap-align: start;
+                    -moz-scroll-snap-align: start;
+                    -ms-scroll-snap-align: start;
+                    scroll-snap-align: start;
+                    border-radius: 3px;
+                    overflow: visible;
+                    position: relative;
+                    height: -webkit-fit-content;
+                    height: -moz-fit-content;
+                    height: fit-content;
+                    opacity: 0.5;
+                }
+            } /*!sc*/
+            data-styled.g44[id="TimeLineStyles__CarouselItem-sc-vs8qb6-2"] {
+                content: "lgwuKa,fzVJks,";
+            } /*!sc*/
+            .gcSYKg {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 32px;
+                -webkit-letter-spacing: 0.02em;
+                -moz-letter-spacing: 0.02em;
+                -ms-letter-spacing: 0.02em;
+                letter-spacing: 0.02em;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                background: linear-gradient(121.57deg, #ffffff 10%, rgba(255, 255, 255, 0.66) 30.15%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 8px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .gcSYKg {
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin-bottom: 4px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .gcSYKg {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            } /*!sc*/
+            data-styled.g45[id="TimeLineStyles__CarouselItemTitle-sc-vs8qb6-3"] {
+                content: "gcSYKg,";
+            } /*!sc*/
+            .fImwcR {
+                margin-left: 21px;
+                -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+                width: 100%;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .fImwcR {
+                    -webkit-mask-image: none;
+                    margin-left: 16px;
+                    overflow: visible;
+                }
+            } /*!sc*/
+            data-styled.g46[id="TimeLineStyles__CarouselItemImg-sc-vs8qb6-4"] {
+                content: "fImwcR,";
+            } /*!sc*/
+            .cplvFr {
+                font-size: 14px;
+                line-height: 22px;
+                -webkit-letter-spacing: 0.02em;
+                -moz-letter-spacing: 0.02em;
+                -ms-letter-spacing: 0.02em;
+                letter-spacing: 0.02em;
+                color: rgba(255, 255, 255, 0.75);
+                padding-right: 16px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .cplvFr {
+                    font-size: 12px;
+                    line-height: 18px;
+                    padding-right: 32px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .cplvFr {
+                    font-size: 11px;
+                    line-height: 18px;
+                    padding-right: 0;
+                }
+            } /*!sc*/
+            data-styled.g47[id="TimeLineStyles__CarouselItemText-sc-vs8qb6-5"] {
+                content: "cplvFr,";
+            } /*!sc*/
+            .jPaYxw {
+                width: 288px;
+                display: none;
+                visibility: hidden;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .jPaYxw {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    visibility: visible;
+                    margin-bottom: 48px;
+                }
+            } /*!sc*/
+            data-styled.g48[id="TimeLineStyles__CarouselButtons-sc-vs8qb6-6"] {
+                content: "jPaYxw,";
+            } /*!sc*/
+            .dNvZgZ {
+                box-sizing: border-box;
+                background: none;
+                padding: 4px;
+                border: none;
+                cursor: pointer;
+                margin-right: 4px;
+                opacity: 1;
+                -webkit-transform: scale(1.6);
+                -ms-transform: scale(1.6);
+                transform: scale(1.6);
+            } /*!sc*/
+            .dNvZgZ:focus {
+                outline: none;
+            } /*!sc*/
+            .llaPZW {
+                box-sizing: border-box;
+                background: none;
+                padding: 4px;
+                border: none;
+                cursor: pointer;
+                margin-right: 4px;
+                opacity: 0.33;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            } /*!sc*/
+            .llaPZW:focus {
+                outline: none;
+            } /*!sc*/
+            data-styled.g49[id="TimeLineStyles__CarouselButton-sc-vs8qb6-7"] {
+                content: "dNvZgZ,llaPZW,";
+            } /*!sc*/
+            .dKrXxm {
+                background-color: white;
+                border-radius: 10px;
+                margin: auto;
+                width: 3px;
+                height: 3px;
+            } /*!sc*/
+            data-styled.g50[id="TimeLineStyles__CarouselButtonDot-sc-vs8qb6-8"] {
+                content: "dKrXxm,";
+            } /*!sc*/
+            .bfkKhn {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 2rem;
+                padding: 1rem;
+                padding-top: 2rem;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .bfkKhn {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-template-rows: repeat(2, 60px);
+                    grid-column-gap: 0.5rem;
+                    grid-row-gap: 0.5rem;
+                }
+            } /*!sc*/
+            data-styled.g51[id="HeaderStyles__Container-sc-9w0vkp-0"] {
+                content: "bfkKhn,";
+            } /*!sc*/
+            .cNSmFP {
+                grid-area: 1 / 1 / 2 / 2;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-align-content: center;
+                -ms-flex-line-pack: center;
+                align-content: center;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .cNSmFP {
+                    grid-area: 1 / 1 / 2 / 3;
+                }
+            } /*!sc*/
+            data-styled.g52[id="HeaderStyles__Div1-sc-9w0vkp-1"] {
+                content: "cNSmFP,";
+            } /*!sc*/
+            .lpaiXb {
+                grid-area: 1 / 2 / 2 / 4;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                margin-top: 0.75em;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .lpaiXb {
+                    grid-area: 2 / 2 / 3 / 5;
+                }
+            } /*!sc*/
+            data-styled.g53[id="HeaderStyles__Div2-sc-9w0vkp-2"] {
+                content: "lpaiXb,";
+            } /*!sc*/
+            .khSvPr {
+                grid-area: 1 / 5 / 2 / 6;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: space-around;
+                -webkit-justify-content: space-around;
+                -ms-flex-pack: space-around;
+                justify-content: space-around;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .khSvPr {
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    grid-area: 1 / 4 / 2 / 6;
+                }
+            } /*!sc*/
+            data-styled.g54[id="HeaderStyles__Div3-sc-9w0vkp-3"] {
+                content: "khSvPr,";
+            } /*!sc*/
+            .fgvVwB {
+                font-size: 2rem;
+                line-height: 32px;
+                color: rgba(255, 255, 255, 0.75);
+                -webkit-transition: 0.4s ease;
+                transition: 0.4s ease;
+            } /*!sc*/
+            .fgvVwB:hover {
+                color: #fff;
+                opacity: 1;
+                cursor: pointer;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .fgvVwB {
+                    padding: 0.5rem;
+                    font-size: 1.7rem;
+                }
+            } /*!sc*/
+            data-styled.g55[id="HeaderStyles__NavLink-sc-9w0vkp-4"] {
+                content: "fgvVwB,";
+            } /*!sc*/
+            .dpkQLo {
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+                color: white;
+                border-radius: 50px;
+                padding: 8px;
+            } /*!sc*/
+            .dpkQLo:hover {
+                background-color: #212d45;
+                -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                transform: scale(1.2);
+                cursor: pointer;
+            } /*!sc*/
+            data-styled.g58[id="HeaderStyles__SocialIcons-sc-9w0vkp-7"] {
+                content: "dpkQLo,";
+            } /*!sc*/
+            .dUndNR {
+                width: calc(100vw - 96px);
+                max-width: 1040px;
+                padding: 2rem 48px 40px;
+                margin: 1rem auto;
+                box-sizing: content-box;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .dUndNR {
+                    padding: 0 16px 48px;
+                    width: calc(100vw - 32px);
+                }
+            } /*!sc*/
+            data-styled.g59[id="FooterStyles__FooterWrapper-sc-1ifsifd-0"] {
+                content: "dUndNR,";
+            } /*!sc*/
+            .bmlAna {
+                font-size: 18px;
+                line-height: 30px;
+                color: rgba(255, 255, 255, 0.75);
+                margin-bottom: 16px;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+                position: relative;
+                left: 0;
+            } /*!sc*/
+            .bmlAna:hover {
+                color: #fff;
+                left: 6px;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .bmlAna {
+                    font-size: 17px;
+                    line-height: 28px;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .bmlAna {
+                    font-size: 15px;
+                    line-height: 14px;
+                    margin-bottom: 8px;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+            } /*!sc*/
+            data-styled.g60[id="FooterStyles__LinkItem-sc-1ifsifd-1"] {
+                content: "bmlAna,";
+            } /*!sc*/
+            .kTHyzI {
+                max-width: 1040px;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .kTHyzI {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .kTHyzI {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    width: 100%;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            } /*!sc*/
+            data-styled.g61[id="FooterStyles__SocialIconsContainer-sc-1ifsifd-2"] {
+                content: "kTHyzI,";
+            } /*!sc*/
+            .eqkhEl {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: baseline;
+                -webkit-box-align: baseline;
+                -ms-flex-align: baseline;
+                align-items: baseline;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: auto;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .eqkhEl {
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-align-items: baseline;
+                    -webkit-box-align: baseline;
+                    -ms-flex-align: baseline;
+                    align-items: baseline;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .eqkhEl {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    margin: 0 0 32px;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+            } /*!sc*/
+            data-styled.g62[id="FooterStyles__CompanyContainer-sc-1ifsifd-3"] {
+                content: "eqkhEl,";
+            } /*!sc*/
+            .icvSpG {
+                color: rgba(255, 255, 255, 0.5);
+                min-width: 280px;
+                -webkit-letter-spacing: 0.02em;
+                -moz-letter-spacing: 0.02em;
+                -ms-letter-spacing: 0.02em;
+                letter-spacing: 0.02em;
+                font-size: 18px;
+                line-height: 30px;
+                padding-top: 1rem;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .icvSpG {
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .icvSpG {
+                    line-height: 22px;
+                    font-size: 15px;
+                    min-width: 100px;
+                }
+            } /*!sc*/
+            data-styled.g63[id="FooterStyles__Slogan-sc-1ifsifd-4"] {
+                content: "icvSpG,";
+            } /*!sc*/
+            .jxtmol {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .jxtmol {
+                    -webkit-box-pack: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    padding-right: 16px;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                }
+            } /*!sc*/
+            data-styled.g64[id="FooterStyles__SocialContainer-sc-1ifsifd-5"] {
+                content: "jxtmol,";
+            } /*!sc*/
+            .gzRBdb {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                display: grid;
+                grid-template-columns: repeat(3, minmax(85px, 220px));
+                gap: 40px;
+                padding: 40px 0 28px;
+            } /*!sc*/
+            @media screen and (max-width: 1024px) {
+                .gzRBdb {
+                    padding: 32px 0 16px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 768px) {
+                .gzRBdb {
+                    width: 100%;
+                    padding: 32px 0 16px;
+                    gap: 16px;
+                }
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .gzRBdb {
+                    width: 100%;
+                    padding: 32px 4px 16px;
+                    gap: 5px;
+                }
+            } /*!sc*/
+            data-styled.g65[id="FooterStyles__LinkList-sc-1ifsifd-6"] {
+                content: "gzRBdb,";
+            } /*!sc*/
+            .hrnyqi {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                max-width: 220px;
+                width: 100%;
+            } /*!sc*/
+            data-styled.g66[id="FooterStyles__LinkColumn-sc-1ifsifd-7"] {
+                content: "hrnyqi,";
+            } /*!sc*/
+            .dAnmZD {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.4);
+                margin-bottom: 16px;
+            } /*!sc*/
+            @media screen and (max-width: 640px) {
+                .dAnmZD {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 8px;
+                }
+            } /*!sc*/
+            data-styled.g67[id="FooterStyles__LinkTitle-sc-1ifsifd-8"] {
+                content: "dAnmZD,";
+            } /*!sc*/
+            .lcbDZL {
+                max-width: 1280px;
+                width: 100%;
+                margin: auto;
+            } /*!sc*/
+            data-styled.g68[id="LayoutStyles__Container-sc-mzu455-0"] {
+                content: "lcbDZL,";
+            } /*!sc*/
+        </style>
+        <style data-href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: normal;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4k.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: normal;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4k.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: normal;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0C4k.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: normal;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4k.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: normal;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4k.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+1F00-1FFF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0370-03FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+1F00-1FFF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0370-03FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+1F00-1FFF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0370-03FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+1F00-1FFF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0370-03FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+1F00-1FFF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0370-03FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format("woff2");
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-stretch: 100%;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="__next">
+            <div class="LayoutStyles__Container-sc-mzu455-0 lcbDZL">
+                <div class="HeaderStyles__Container-sc-9w0vkp-0 bfkKhn">
+                    <div class="HeaderStyles__Div1-sc-9w0vkp-1 cNSmFP">
+                        <a style="display: flex; align-items: center; color: white;" href="/"> <span style="margin-left: 10px; margin-top: 7px; font-size: 20px;">anuragt.js</span></a>
+                    </div>
+                    <div class="HeaderStyles__Div2-sc-9w0vkp-2 lpaiXb">
+                        <li><a class="HeaderStyles__NavLink-sc-9w0vkp-4 fgvVwB">Projects</a></li>
+                        <li><a class="HeaderStyles__NavLink-sc-9w0vkp-4 fgvVwB">Skills</a></li>
+                        <li><a class="HeaderStyles__NavLink-sc-9w0vkp-4 fgvVwB">About</a></li>
+                    </div>
+                    <div class="HeaderStyles__Div3-sc-9w0vkp-3 khSvPr">
+                        <a href="https://github.com/Anuragtawaniya" class="HeaderStyles__SocialIcons-sc-9w0vkp-7 dpkQLo">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anurag-tawaniya-7860741a0/" class="HeaderStyles__SocialIcons-sc-9w0vkp-7 dpkQLo">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/anuragt.js" class="HeaderStyles__SocialIcons-sc-9w0vkp-7 dpkQLo">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.twitter.com/" class="HeaderStyles__SocialIcons-sc-9w0vkp-7 dpkQLo">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm215.3 337.7c.3 4.7.3 9.6.3 14.4 0 146.8-111.8 315.9-316.1 315.9-63 0-121.4-18.3-170.6-49.8 9 1 17.6 1.4 26.8 1.4 52 0 99.8-17.6 137.9-47.4-48.8-1-89.8-33-103.8-77 17.1 2.5 32.5 2.5 50.1-2a111 111 0 0 1-88.9-109v-1.4c14.7 8.3 32 13.4 50.1 14.1a111.13 111.13 0 0 1-49.5-92.4c0-20.7 5.4-39.6 15.1-56a315.28 315.28 0 0 0 229 116.1C492 353.1 548.4 292 616.2 292c32 0 60.8 13.4 81.1 35 25.1-4.7 49.1-14.1 70.5-26.7-8.3 25.7-25.7 47.4-48.8 61.1 22.4-2.4 44-8.6 64-17.3-15.1 22.2-34 41.9-55.7 57.6z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <section class="mt-5 mb-5 mb-md-0">
-            <div class="container-xxl g-codecyan overflow-hidden">
-                <div class="row justify-content-between align-items-center gx-5 gy-5">
-                    <div class="col-md-3">
-                        <div class="text-center text-md-start">
-                            <h1 class="display-1 fw-bold lh-base">Hi, I'm <span class="text-accent-codecyan">Anurag
-                                    </span>!
-                            </h1>
+                <main>
+                    <section class="GlobalComponents__Section-sc-6qzy6y-0 bjnpGk">
+                        <section class="GlobalComponents__Section-sc-6qzy6y-0 cgQFVO">
+                            <div class="HeroStyles__LeftSection-sc-pbjia3-0 ijISIQ">
+                                <h2 class="GlobalComponents__SectionTitle-sc-6qzy6y-1 iwASPi">Hey there,</h2>
+                                <p class="GlobalComponents__SectionText-sc-6qzy6y-2 gPILqT">Hey there, This is Anurag Tawaniya. I am a Software developer who works on Front-End , Back-End and React Native.</p>
+                                <div class="GlobalComponents__ButtonBack-sc-6qzy6y-6 jlrszi">My Resume<button class="GlobalComponents__ButtonFront-sc-6qzy6y-7 evTffm">My Resume</button></div>
+                            </div>
+                        </section>
+                        <div>
+                            <svg class="BgAnimation__svg" viewBox="0 0 602 602" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.15">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M201.337 87.437C193.474 79.5738 180.725 79.5738 172.862 87.437L87.437 172.862C79.5739 180.725 79.5739 193.474 87.437 201.337L400.663 514.563C408.526 522.426 421.275 522.426 429.138 514.563L514.563 429.138C522.426 421.275 522.426 408.526 514.563 400.663L201.337 87.437ZM30.4869 115.912C-8.82897 155.228 -8.82897 218.972 30.4869 258.287L343.713 571.513C383.028 610.829 446.772 610.829 486.088 571.513L571.513 486.088C610.829 446.772 610.829 383.028 571.513 343.713L258.287 30.4869C218.972 -8.82896 155.228 -8.82896 115.912 30.4869L30.4869 115.912Z"
+                                        stroke="url(#paint0_radial)"
+                                        id="path_0"
+                                    ></path>
+                                    <path
+                                        d="M514.563 201.337C522.426 193.474 522.426 180.725 514.563 172.862L429.138 87.437C421.275 79.5738 408.526 79.5739 400.663 87.437L358.098 130.002L301.148 73.0516L343.713 30.4869C383.028 -8.82896 446.772 -8.82896 486.088 30.4869L571.513 115.912C610.829 155.228 610.829 218.972 571.513 258.287L357.802 471.999L300.852 415.049L514.563 201.337Z"
+                                        stroke="url(#paint1_radial)"
+                                        id="path_1"
+                                    ></path>
+                                    <path
+                                        d="M243.901 471.999L201.337 514.563C193.474 522.426 180.725 522.426 172.862 514.563L87.437 429.138C79.5739 421.275 79.5739 408.526 87.437 400.663L301.148 186.952L244.198 130.002L30.4869 343.713C-8.82897 383.028 -8.82897 446.772 30.4869 486.088L115.912 571.513C155.228 610.829 218.972 610.829 258.287 571.513L300.852 528.949L243.901 471.999Z"
+                                        stroke="url(#paint2_radial)"
+                                        id="path_2"
+                                    ></path>
+                                </g>
+                                <ellipse cx="295.027" cy="193.118" transform="translate(-295.027 -193.118)" rx="1.07306" ry="1.07433" fill="#945DD6">
+                                    <animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion>
+                                </ellipse>
+                                <path d="M294.685 193.474L268.932 219.258" transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)" stroke="url(#paint3_linear)">
+                                    <animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion>
+                                </path>
+                                <ellipse cx="295.027" cy="193.118" transform="translate(-295.027 -193.118)" rx="1.07306" ry="1.07433" fill="#46737">
+                                    <animateMotion dur="5s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion>
+                                </ellipse>
+                                <path d="M294.685 193.474L268.932 219.258" transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)" stroke="url(#paint7_linear)">
+                                    <animateMotion dur="5s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion>
+                                </path>
+                                <ellipse cx="476.525" cy="363.313" rx="1.07433" ry="1.07306" transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)" fill="#945DD6">
+                                    <animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion>
+                                </ellipse>
+                                <path d="M476.171 362.952L450.417 337.168" transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)" stroke="url(#paint4_linear)">
+                                    <animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion>
+                                </path>
+                                <ellipse cx="382.164" cy="155.029" rx="1.07433" ry="1.07306" transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)" fill="#F46737">
+                                    <animateMotion dur="10s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion>
+                                </ellipse>
+                                <path d="M381.81 154.669L356.057 128.885" transform="translate(-381.81 -154.669) rotate(-45 381.81 154.669)" stroke="url(#paint5_linear)">
+                                    <animateMotion dur="10s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion>
+                                </path>
+                                <ellipse cx="333.324" cy="382.691" rx="1.07306" ry="1.07433" transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)" fill="#F46737">
+                                    <animateMotion dur="5s" begin="0" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_1"></mpath></animateMotion>
+                                </ellipse>
+                                <path d="M333.667 382.335L359.42 356.551" transform="scale(-1 1) translate(-333.667 -382.335) rotate(45 333.667 382.335)" stroke="url(#paint6_linear)">
+                                    <animateMotion dur="5s" begin="0" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_1"></mpath></animateMotion>
+                                </path>
+                                <ellipse cx="165.524" cy="93.9596" rx="1.07306" ry="1.07433" transform="translate(-165.524 -93.9596)" fill="#F46737">
+                                    <animateMotion dur="10s" begin="3" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion>
+                                </ellipse>
+                                <path d="M165.182 94.3159L139.429 120.1" transform="translate(-165.182 -94.3159) rotate(45 165.182 94.3159)" stroke="url(#paint7_linear)">
+                                    <animateMotion dur="10s" begin="3" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion>
+                                </path>
+                                <ellipse cx="476.525" cy="363.313" rx="1.07433" ry="1.07306" transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)" fill="#13ADC7">
+                                    <animateMotion dur="12s" begin="4" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion>
+                                </ellipse>
+                                <path d="M476.171 362.952L450.417 337.168" transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)" stroke="url(#paint11_linear)">
+                                    <animateMotion dur="12s" begin="4" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion>
+                                </path>
+                                <defs>
+                                    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)">
+                                        <stop offset="0.333333" stop-color="#FBFBFB"></stop>
+                                        <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                    </radialGradient>
+                                    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)">
+                                        <stop offset="0.333333" stop-color="#FBFBFB"></stop>
+                                        <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                    </radialGradient>
+                                    <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)">
+                                        <stop offset="0.333333" stop-color="#FBFBFB"></stop>
+                                        <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                    </radialGradient>
+                                    <linearGradient id="paint3_linear" x1="295.043" y1="193.116" x2="269.975" y2="218.154" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#945DD6"></stop>
+                                        <stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint4_linear" x1="476.529" y1="363.31" x2="451.461" y2="338.272" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#945DD6"></stop>
+                                        <stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint5_linear" x1="382.168" y1="155.027" x2="357.1" y2="129.989" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F46737"></stop>
+                                        <stop offset="1" stop-color="#F46737" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint6_linear" x1="333.309" y1="382.693" x2="358.376" y2="357.655" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F46737"></stop>
+                                        <stop offset="1" stop-color="#F46737" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint7_linear" x1="165.54" y1="93.9578" x2="140.472" y2="118.996" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F46737"></stop>
+                                        <stop offset="1" stop-color="#F46737" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint8_linear" x1="414.367" y1="301.156" x2="439.435" y2="276.118" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#13ADC7"></stop>
+                                        <stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint9_linear" x1="515.943" y1="288.238" x2="541.339" y2="291.454" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#13ADC7"></stop>
+                                        <stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint10_linear" x1="117.001" y1="230.619" x2="117.36" y2="258.193" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#945DD6"></stop>
+                                        <stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint11_linear" x1="476.529" y1="363.31" x2="451.461" y2="338.272" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#13ADC7"></stop>
+                                        <stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="anim-codecyan">
-                            <img class="w-100 img-fluid" src="assets/hero-image.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class=" text-center text-md-end">
-                            <p class="fs-4">I am web developer.<br />I Love to build mobile apps and websites.</p>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-    </header>
-
-
-    <main class="main-codecyan">
-
-        <section id="about" class="bg-white py-5">
-            <div class="container-xxl g-codecyan overflow-hidden py-5">
-                <div class="row justify-content-between align-items-center gap-5 my-4">
-
-                    <div class="col-md-5 order-1 order-md-0">
-                        <div class="row gap-5">
-                            <div class="col-12">
-                                <div class="bg-white px-4 py-4 rounded-5 border">
-                                    <div class="row align-items-center">
-                                        <div class="col-3">
-                                            <div
-                                                class="d-flex justify-content-center align-items-center position-relative text-center">
-                                                <img src="assets/green-bg.png" alt=""
-                                                    class="w-75 rounded-circle img-fluid service-img-codecyan">
-                                                <div class="position-absolute fs-4 text-light">
-                                                    <i class="bi bi-brush"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h1 class="fw-bold m-0">App Design</h1>
-                                        </div>
-                                    </div>
+                    </section>
+                    <section id="projects" class="GlobalComponents__Section-sc-6qzy6y-0 cFQNhz">
+                        <div class="GlobalComponents__SectionDivider-sc-6qzy6y-3 idtsIY"></div>
+                        <h2 class="GlobalComponents__SectionTitle-sc-6qzy6y-1 iwASPi">Projects</h2>
+                        <section class="ProjectsStyles__GridContainer-sc-l76idc-1 juGfGz">
+                            <div class="ProjectsStyles__BlogCard-sc-l76idc-2 ibufTt">
+                                <img src="./assets/pro1.png" class="ProjectsStyles__Img-sc-l76idc-0 MtfvO" />
+                                <h3 title="GitShow" class="ProjectsStyles__HeaderThree-sc-l76idc-4 bRwuck">Icmit</h3>
+                                <hr class="ProjectsStyles__Hr-sc-l76idc-5 jPLFtu" />
+                               
+                                <div>
+                                    <div class="ProjectsStyles__TitleContent-sc-l76idc-3 fWUATX">Tech Stack</div>
+                                    <hr class="ProjectsStyles__Hr-sc-l76idc-5 jPLFtu" />
+                                    <ul class="ProjectsStyles__TagList-sc-l76idc-10 cbeJFc">
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">Bootstrap</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">JSON</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">CSS</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">Php</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">MySql</li>
+                                    </ul>
                                 </div>
+                                <ul class="ProjectsStyles__UtilityList-sc-l76idc-8 eyVPfb">
+                                    <a href="https://www.iisjaipur.org/iiim/current-2022-23/icmit-2022/index.html" class="ProjectsStyles__ExternalLinks-sc-l76idc-9 gbNcjK">Live Preview</a>
+                                    <a href="#" class="ProjectsStyles__ExternalLinks-sc-l76idc-9 gbNcjK">Source Code</a>
+                                </ul>
                             </div>
-
-                            <div class="col-12">
-                                <div class="bg-white px-4 py-4 rounded-5 border">
-                                    <div class="row align-items-center">
-                                        <div class="col-3">
-                                            <div
-                                                class="d-flex justify-content-center align-items-center position-relative text-center">
-                                                <img src="assets/blue-bg.png" alt=""
-                                                    class="w-75 rounded-circle img-fluid service-img-codecyan">
-                                                <div class="position-absolute fs-4 text-light">
-                                                    <i class="bi bi-code-square"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h1 class="fw-bold m-0">Web Design</h1>
-                                        </div>
-                                    </div>
+                            <div class="ProjectsStyles__BlogCard-sc-l76idc-2 ibufTt">
+                                <img src="./assets/pro2.png" class="ProjectsStyles__Img-sc-l76idc-0 MtfvO" />
+                                <h3 title="Health DAPP" class="ProjectsStyles__HeaderThree-sc-l76idc-4 bRwuck">Agency Website</h3>
+                                <hr class="ProjectsStyles__Hr-sc-l76idc-5 jPLFtu" />
+                            
+                                <div>
+                                    <div class="ProjectsStyles__TitleContent-sc-l76idc-3 fWUATX">Tech Stack</div>
+                                    <hr class="ProjectsStyles__Hr-sc-l76idc-5 jPLFtu" />
+                                    <ul class="ProjectsStyles__TagList-sc-l76idc-10 cbeJFc">
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">React</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">Tailwind</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">FireBase</li>
+                                       
+                                    </ul>
                                 </div>
+                                <ul class="ProjectsStyles__UtilityList-sc-l76idc-8 eyVPfb">
+                                    <a href="#" class="ProjectsStyles__ExternalLinks-sc-l76idc-9 gbNcjK">Live Preview</a>
+                                    <a href="#" class="ProjectsStyles__ExternalLinks-sc-l76idc-9 gbNcjK">Source Code</a>
+                                </ul>
                             </div>
-
-                            <div class="col-12">
-                                <div class="bg-white px-4 py-4 rounded-5 border">
-                                    <div class="row align-items-center">
-                                        <div class="col-3">
-                                            <div
-                                                class="d-flex justify-content-center align-items-center position-relative text-center">
-                                                <img src="assets/yellow-bg.png" alt=""
-                                                    class="w-75 rounded-circle img-fluid service-img-codecyan">
-                                                <div class="position-absolute fs-4 text-light">
-                                                    <i class="bi bi-terminal"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h1 class="fw-bold m-0">Custom Script</h1>
-                                        </div>
-                                    </div>
+                            <div class="ProjectsStyles__BlogCard-sc-l76idc-2 ibufTt">
+                                <img src="./assets/pro3.jpeg" class="ProjectsStyles__Img-sc-l76idc-0 MtfvO" />
+                                <h3 title="Twitter-Telegram Bot SaveTweet" class="ProjectsStyles__HeaderThree-sc-l76idc-4 bRwuck">Jcb Booking</h3>
+                                <hr class="ProjectsStyles__Hr-sc-l76idc-5 jPLFtu" />
+    
+                                <div>
+                                    <div class="ProjectsStyles__TitleContent-sc-l76idc-3 fWUATX">Tech Stack</div>
+                                    <hr class="ProjectsStyles__Hr-sc-l76idc-5 jPLFtu" />
+                                    <ul class="ProjectsStyles__TagList-sc-l76idc-10 cbeJFc">
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">React Native</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">Firebase</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">Javascript</li>
+                                    </ul>
                                 </div>
+                                <ul class="ProjectsStyles__UtilityList-sc-l76idc-8 eyVPfb">
+                                    <a href="#" class="ProjectsStyles__ExternalLinks-sc-l76idc-9 gbNcjK">Live Preview</a>
+                                    <a href="#" class="ProjectsStyles__ExternalLinks-sc-l76idc-9 gbNcjK">Source Code</a>
+                                </ul>
+                            </div>
+                            <div class="ProjectsStyles__BlogCard-sc-l76idc-2 ibufTt">
+                                <img src="./assets/pro4.png" class="ProjectsStyles__Img-sc-l76idc-0 MtfvO" />
+                                <h3 title="Pet Store" class="ProjectsStyles__HeaderThree-sc-l76idc-4 bRwuck">Trade Gainers</h3>
+                                <hr class="ProjectsStyles__Hr-sc-l76idc-5 jPLFtu" />
+                               
+                                <div>
+                                    <div class="ProjectsStyles__TitleContent-sc-l76idc-3 fWUATX">Tech Stack</div>
+                                    <hr class="ProjectsStyles__Hr-sc-l76idc-5 jPLFtu" />
+                                    <ul class="ProjectsStyles__TagList-sc-l76idc-10 cbeJFc">
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">React</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">Json</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">Php</li>
+                                        <li class="ProjectsStyles__Tag-sc-l76idc-11 jSKGRH">MySql</li>
+                                    </ul>
+                                </div>
+                                <ul class="ProjectsStyles__UtilityList-sc-l76idc-8 eyVPfb">
+                                    <a href="#" class="ProjectsStyles__ExternalLinks-sc-l76idc-9 gbNcjK">Live Preview</a>
+                                    <a href="#" class="ProjectsStyles__ExternalLinks-sc-l76idc-9 gbNcjK">Source Code</a>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                    <section id="skills" class="GlobalComponents__Section-sc-6qzy6y-0 cFQNhz">
+                        <div class="GlobalComponents__SectionDivider-sc-6qzy6y-3 ircPKK"></div>
+                        <h2 class="GlobalComponents__SectionTitle-sc-6qzy6y-1 ktbJnW">Skills</h2>
+                        <p class="GlobalComponents__SectionText-sc-6qzy6y-2 gPILqT">I&#x27;ve worked with multiple technologies as a developer to develop &amp; maintain my projects.</p>
+                        <ul class="TechnologiesStyles__List-sc-1ehw0pq-2 YemMf">
+                            <li class="TechnologiesStyles__ListItem-sc-1ehw0pq-6 dnnCMa">
+                                <picture>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 34 32" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.314 15.987c0 1.321-1.071 2.392-2.392 2.392s-2.392-1.071-2.392-2.392c0-1.321 1.071-2.392 2.392-2.392s2.392 1.071 2.392 2.392z"></path>
+                                        <path
+                                            d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906 0.489 0 0.952-0.103 1.337-0.334 1.337-0.772 1.826-2.701 1.363-5.453-0.077-0.489-0.18-0.977-0.309-1.492 0.514-0.154 0.977-0.309 1.44-0.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-0.463-0.18-0.926-0.334-1.44-0.463 0.129-0.514 0.232-1.003 0.309-1.492 0.437-2.803-0.051-4.758-1.389-5.53-0.386-0.231-0.849-0.334-1.337-0.334-1.466 0-3.344 1.080-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-0.489 0-0.952 0.103-1.337 0.334-1.337 0.772-1.826 2.701-1.363 5.453 0.077 0.489 0.18 0.977 0.309 1.492-0.514 0.154-0.977 0.309-1.44 0.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909 0.463 0.18 0.926 0.334 1.44 0.463-0.129 0.514-0.232 1.003-0.309 1.492-0.437 2.752 0.051 4.707 1.363 5.453 0.386 0.232 0.849 0.334 1.337 0.334 1.492 0.051 3.344-1.029 5.221-2.829v0zM15.481 21.311c0.463 0.026 0.952 0.026 1.44 0.026s0.977 0 1.44-0.026c-0.463 0.617-0.952 1.183-1.44 1.723-0.489-0.54-0.977-1.106-1.44-1.723zM12.292 18.662c0.257 0.437 0.489 0.849 0.772 1.26-0.797-0.103-1.543-0.232-2.263-0.386 0.232-0.694 0.489-1.415 0.797-2.135 0.206 0.411 0.437 0.849 0.694 1.26zM10.8 12.463c0.72-0.154 1.466-0.283 2.263-0.386-0.257 0.412-0.514 0.823-0.772 1.26s-0.489 0.849-0.694 1.286c-0.334-0.746-0.592-1.466-0.797-2.161zM12.215 15.987c0.334-0.694 0.694-1.389 1.106-2.083 0.386-0.669 0.823-1.337 1.26-2.006 0.772-0.051 1.543-0.077 2.341-0.077 0.823 0 1.595 0.026 2.341 0.077 0.463 0.669 0.874 1.337 1.26 2.006 0.412 0.694 0.772 1.389 1.106 2.083-0.334 0.694-0.694 1.389-1.106 2.083-0.386 0.669-0.823 1.337-1.26 2.006-0.772 0.051-1.543 0.077-2.341 0.077-0.823 0-1.595-0.026-2.341-0.077-0.463-0.669-0.874-1.337-1.26-2.006-0.412-0.695-0.772-1.389-1.106-2.083v0zM22.272 14.598l-0.694-1.286c-0.257-0.437-0.489-0.849-0.772-1.26 0.797 0.103 1.543 0.232 2.263 0.386-0.231 0.72-0.489 1.44-0.797 2.161v0zM22.272 17.376c0.309 0.72 0.566 1.44 0.797 2.135-0.72 0.154-1.466 0.283-2.263 0.386 0.257-0.412 0.514-0.823 0.772-1.26 0.232-0.386 0.463-0.823 0.694-1.26v0zM22.863 26.301c-0.206 0.129-0.463 0.18-0.746 0.18-1.26 0-2.829-1.029-4.372-2.572 0.746-0.797 1.466-1.698 2.186-2.701 1.209-0.103 2.366-0.283 3.447-0.54 0.129 0.463 0.206 0.926 0.283 1.389 0.36 2.186 0.077 3.755-0.797 4.244zM24.201 12.746c2.881 0.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-0.412 0.154-0.874 0.309-1.337 0.437-0.334-1.055-0.746-2.135-1.26-3.241 0.514-1.106 0.952-2.186 1.26-3.241v0zM22.143 5.493c0.283 0 0.514 0.051 0.746 0.18 0.849 0.489 1.157 2.032 0.797 4.244-0.077 0.437-0.18 0.9-0.283 1.389-1.080-0.232-2.238-0.412-3.447-0.54-0.694-1.003-1.44-1.903-2.186-2.701 1.543-1.518 3.112-2.572 4.372-2.572zM18.362 10.663c-0.463-0.026-0.952-0.026-1.44-0.026s-0.977 0-1.44 0.026c0.463-0.617 0.952-1.183 1.44-1.723 0.489 0.54 0.977 1.132 1.44 1.723v0zM10.98 5.673c0.206-0.129 0.463-0.18 0.746-0.18 1.26 0 2.829 1.029 4.372 2.572-0.746 0.797-1.466 1.697-2.186 2.701-1.209 0.103-2.366 0.283-3.447 0.54-0.129-0.463-0.206-0.926-0.283-1.389-0.36-2.186-0.077-3.729 0.797-4.244v0zM9.643 19.228c-2.881-0.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803 0.412-0.154 0.874-0.309 1.337-0.437 0.334 1.055 0.746 2.135 1.26 3.241-0.514 1.106-0.952 2.212-1.26 3.241zM10.183 22.057c0.077-0.437 0.18-0.9 0.283-1.389 1.080 0.232 2.238 0.412 3.447 0.54 0.694 1.003 1.44 1.903 2.186 2.701-1.543 1.517-3.112 2.572-4.372 2.572-0.283 0-0.514-0.051-0.746-0.18-0.875-0.489-1.157-2.058-0.797-4.244z"
+                                        ></path>
+                                    </svg>
+                                </picture>
+                                <div class="TechnologiesStyles__ListContainer-sc-1ehw0pq-3 dPpGTk">
+                                    <h4 class="TechnologiesStyles__ListTitle-sc-1ehw0pq-4 hZLVWF">React</h4>
+                                    <div class="TechnologiesStyles__ListParagraph-sc-1ehw0pq-5 fpHcvC">I work on front-end using React.</div>
+                                </div>
+                            </li>
+                            <li class="TechnologiesStyles__ListItem-sc-1ehw0pq-6 dnnCMa">
+                                <picture>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.698 3.419l2.057 23.073 9.231 2.563 9.256-2.566 2.059-23.069h-22.604zM13.226 9.394l-0.409 4.441 9.671 0.001-0.069 0.76-0.665 7.45-0.042 0.478-5.804 1.609-5.796-1.609-0.396-4.443h2.84l0.202 2.257 3.154 0.85 3.156-0.852 0.328-3.67-9.671-0.001 0.069-0.76 0.665-7.45 0.209-2.086h11.287l0.131 1.598 0.403 4.453h-2.841l-0.262-2.922-2.889-0.174h-0.515v-0.004l-2.755 0.074z"
+                                        ></path>
+                                    </svg>
+                                </picture>
+                                <div class="TechnologiesStyles__ListContainer-sc-1ehw0pq-3 dPpGTk">
+                                    <h4 class="TechnologiesStyles__ListTitle-sc-1ehw0pq-4 hZLVWF">Javascript</h4>
+                                    <div class="TechnologiesStyles__ListParagraph-sc-1ehw0pq-5 fpHcvC">I can code in javascript , do basic front-end stuff with it .</div>
+                                </div>
+                            </li>
+                            <li class="TechnologiesStyles__ListItem-sc-1ehw0pq-6 dnnCMa">
+                                <picture>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.017 21.044v0zM4.743 3.519l2.049 22.981 9.194 2.552 9.22-2.556 2.051-22.977h-22.514zM23 8.775l-0.693 7.767h-0l-0.48 5.359-0.042 0.476-5.781 1.603-5.773-1.603-0.395-4.426h2.829l0.201 2.248 3.142 0.847 0.008-0.002 0.002-0 3.134-0.846 0.329-3.655-6.579 0-0.056-0.633-0.129-1.429-0.067-0.756 7.081-0 0.258-2.886h-10.786l-0.056-0.634-0.129-1.429-0.067-0.756h14.118l-0.068 0.756z"
+                                        ></path>
+                                    </svg>
+                                </picture>
+                                <div class="TechnologiesStyles__ListContainer-sc-1ehw0pq-3 dPpGTk">
+                                    <h4 class="TechnologiesStyles__ListTitle-sc-1ehw0pq-4 hZLVWF">CSS</h4>
+                                    <div class="TechnologiesStyles__ListParagraph-sc-1ehw0pq-5 fpHcvC">I do write CSS for my front-end projects.</div>
+                                </div>
+                            </li>
+                            <li class="TechnologiesStyles__ListItem-sc-1ehw0pq-6 dnnCMa">
+                                <picture>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                        <title></title>
+                                        <path
+                                            d="M22.393 6c-.167-.29-.398-.543-.652-.69L12.925.22c-.508-.293-1.339-.293-1.847 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.689l8.816 5.091c.508.293 1.339.293 1.847 0l8.816-5.091c.254-.146.485-.399.652-.689s.271-.616.271-.91V6.91c.002-.294-.102-.62-.269-.91zM12 19.109c-3.92 0-7.109-3.189-7.109-7.109S8.08 4.891 12 4.891a7.133 7.133 0 0 1 6.156 3.552l-3.076 1.781A3.567 3.567 0 0 0 12 8.445c-1.96 0-3.554 1.595-3.554 3.555S10.04 15.555 12 15.555a3.57 3.57 0 0 0 3.08-1.778l3.077 1.78A7.135 7.135 0 0 1 12 19.109zm7.109-6.714h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79v.79zm2.962 0h-.79v.79h-.79v-.79h-.789v-.79h.789v-.79h.79v.79h.79v.79z"
+                                        ></path>
+                                    </svg>
+                                </picture>
+                                <div class="TechnologiesStyles__ListContainer-sc-1ehw0pq-3 dPpGTk">
+                                    <h4 class="TechnologiesStyles__ListTitle-sc-1ehw0pq-4 hZLVWF">C++</h4>
+                                    <div class="TechnologiesStyles__ListParagraph-sc-1ehw0pq-5 fpHcvC">I can code in C++. But I mainly use it for Hackerearth question.</div>
+                                </div>
+                            </li>
+                            <li class="TechnologiesStyles__ListItem-sc-1ehw0pq-6 dnnCMa">
+                                <picture>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                        <title></title>
+                                        <path
+                                            d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"
+                                        ></path>
+                                    </svg>
+                                </picture>
+                                <div class="TechnologiesStyles__ListContainer-sc-1ehw0pq-3 dPpGTk">
+                                    <h4 class="TechnologiesStyles__ListTitle-sc-1ehw0pq-4 hZLVWF">AWS</h4>
+                                    <div class="TechnologiesStyles__ListParagraph-sc-1ehw0pq-5 fpHcvC">I have used AWS for deploying my python twitter-telegram bot.</div>
+                                </div>
+                            </li>
+                            <li class="TechnologiesStyles__ListItem-sc-1ehw0pq-6 dnnCMa">
+                                <picture>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                        <title></title>
+                                        <path
+                                            d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"
+                                        ></path>
+                                    </svg>
+                                </picture>
+                                <div class="TechnologiesStyles__ListContainer-sc-1ehw0pq-3 dPpGTk">
+                                    <h4 class="TechnologiesStyles__ListTitle-sc-1ehw0pq-4 hZLVWF">Git</h4>
+                                    <div class="TechnologiesStyles__ListParagraph-sc-1ehw0pq-5 fpHcvC">Git is a tool that I use every day. I use GitHub for pushing my code.</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="GlobalComponents__SectionDivider-sc-6qzy6y-3 enlhcM"></div>
+                    </section>
+                    <!-- <section id="about" class="GlobalComponents__Section-sc-6qzy6y-0 cFQNhz">
+                        <h2 class="GlobalComponents__SectionTitle-sc-6qzy6y-1 ktbJnW">Client FeedBack</h2>
+                       <img src="" alt="">
+                    </section> -->
+                    <section class="GlobalComponents__Section-sc-6qzy6y-0 cFQNhz">
+                        <h2 class="GlobalComponents__SectionTitle-sc-6qzy6y-1 ktbJnW">Personal Achievements</h2>
+                        <div class="AcomplishmentsStyles__Boxes-sc-vuq5bz-0 dAKHQi">
+                            <div class="AcomplishmentsStyles__Box-sc-vuq5bz-1 bgepbk">
+                                <h5 class="AcomplishmentsStyles__BoxNum-sc-vuq5bz-2 jhUPFM">20+</h5>
+                                <p class="AcomplishmentsStyles__BoxText-sc-vuq5bz-3 bdNxwa">Github Repositories</p>
+                            </div>
+                            <div class="AcomplishmentsStyles__Box-sc-vuq5bz-1 bgepbk">
+                                <h5 class="AcomplishmentsStyles__BoxNum-sc-vuq5bz-2 jhUPFM">150+</h5>
+                                <p class="AcomplishmentsStyles__BoxText-sc-vuq5bz-3 bdNxwa">Rank On HackerRank</p>
+                            </div>
+                            <div class="AcomplishmentsStyles__Box-sc-vuq5bz-1 bgepbk">
+                                <h5 class="AcomplishmentsStyles__BoxNum-sc-vuq5bz-2 jhUPFM">2300+</h5>
+                                <p class="AcomplishmentsStyles__BoxText-sc-vuq5bz-3 bdNxwa">Linkedin Followers</p>
+                            </div>
+                            <div class="AcomplishmentsStyles__Box-sc-vuq5bz-1 bgepbk">
+                                <h5 class="AcomplishmentsStyles__BoxNum-sc-vuq5bz-2 jhUPFM">1+</h5>
+                                <p class="AcomplishmentsStyles__BoxText-sc-vuq5bz-3 bdNxwa">Telegram bot</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="text-center text-md-start">
-                            <h4 class="fw-bold text-danger">Who am I?</h4>
-                            <h1 class="display-2 fw-bold">About Me</h1>
+                        <div class="GlobalComponents__SectionDivider-sc-6qzy6y-3 idtsIY"></div>
+                    </section>
+                </main>
+                <section class="FooterStyles__FooterWrapper-sc-1ifsifd-0 dUndNR">
+                    <ul class="FooterStyles__LinkList-sc-1ifsifd-6 gzRBdb">
+                        <div class="FooterStyles__LinkColumn-sc-1ifsifd-7 hrnyqi">
+                            <h4 class="FooterStyles__LinkTitle-sc-1ifsifd-8 dAnmZD">Chat</h4>
+                            <a href="https://t.me/anuragtawaniya" class="FooterStyles__LinkItem-sc-1ifsifd-1 bmlAna">Telegram</a>
                         </div>
-                        <p class="mt-5 lh-lg">Hello This is Anurag.I have always been enthusiastic about computer 💻 and that's why I chose this as my career. At first, what brought me closer to computers were games. But after that, I became much more interested in knowing how the web programs are created and how things work behind the scene.I ❤️ to build web and mobile apps.</p>
-                       
-
-                        <a class="mt-4 btn btn-accent-codecyan btn-lg" href="#contact" role="button">Contact <i
-                                class="bi bi-caret-down-fill"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="bg-odd-codecyan py-5">
-            <div class="container-xxl g-codecyan overflow-hidden py-5">
-                <div class="text-center text-md-start">
-                    <h4 class="fw-bold text-success">Explore My Work</h4>
-                    <h1 class="display-2 fw-bold">Portfolio</h1>
-                </div>
-                <div class="row justify-content-between gx-5 gy-5 my-4">
-                    <div class="col-md-4">
-                        <div class="bg-green-codecyan anim-codecyan rounded-5 overflow-hidden">
-                            <div class="p-5 pb-3">
-                                <h1 class="fw-bold text-light">App Design</h1>
-                                <p class="fs-4 text-light">Step counting app</p>
-                            </div>
-                            <div class="ms-5"><img class="img-fluid w-100" src="assets/app.png" /></div>
-
+                        <div class="FooterStyles__LinkColumn-sc-1ifsifd-7 hrnyqi">
+                            <h4 class="FooterStyles__LinkTitle-sc-1ifsifd-8 dAnmZD">Email</h4>
+                            <a href="mailto:maqboolraza4@gmail.com" class="FooterStyles__LinkItem-sc-1ifsifd-1 bmlAna">anuragtawaniya99@gmail.com</a>
                         </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="bg-blue-codecyan anim-codecyan rounded-5 overflow-hidden">
-                            <div class="p-5 pb-3">
-                                <h1 class="fw-bold text-light">Web Design</h1>
-                                <p class="fs-4 text-light">IG downloader website</p>
-                            </div>
-                            <div class="ms-5"><img class="img-fluid w-100" src="assets/custom-script.png" /></div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="bg-yellow-codecyan anim-codecyan rounded-5 overflow-hidden">
-                            <div class="p-5 pb-3">
-                                <h1 class="fw-bold text-light">Custom Script</h1>
-                                <p class="fs-4 text-light">Social connection app</p>
-                            </div>
-                            <div class="ms-5"><img class="img-fluid w-100" src="assets/phone.png" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer id="contact" class="bg-white py-5">
-        <div class="container-xxl g-codecyan overflow-hidden py-5">
-            <div class="row justify-content-between gx-0 gy-5">
-                <div class="col-md-7">
-                    <h5 class="display-4 fw-bold">Let's make something amazing together.</h5>
-                    <h5 class="display-4 mt-5 fw-bold">Say hi on Insta <span
-                            class="text-danger text-decoration-underline"><a target="_blank" class="text-reset"
-                                href="https://www.instagram.com/anuragt.js/">@anuragt.js</a></span>
-                    </h5>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="fs-2 fw-bold">Contact</h5>
-                    <p class="mt-3 fs-5">Bikaner,India</p>
-                    <p class="mt-3 fs-5">+91 9119392742</p>
-                    <ul class="navbar-nav gap-2 mt-5">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
                     </ul>
-                </div>
-                <div class="border-top border-dark my-5 mx-auto" style="width: 80vw;"></div>
-            
-                <div class="col-md-12">
-                    <div class="text-start text-md-end"> Made with <i class="bi bi-heart-fill text-danger"></i> by <a
-                            class="dev-codecyan" href="https://www.instagram.com/anuragt.js/" target="_blank">Anurag</a>
-                      
+                    <div class="FooterStyles__SocialIconsContainer-sc-1ifsifd-2 kTHyzI">
+                        <div class="FooterStyles__CompanyContainer-sc-1ifsifd-3 eqkhEl">
+                            <p class="FooterStyles__Slogan-sc-1ifsifd-4 icvSpG">© 2022 <a href="https://anuragtawaniya.github.io/" class="GlobalComponents__Link-sc-6qzy6y-10 kzaJlY">AnuragTawaniya</a> . All rights reserved.</p>
+                        </div>
+                        <div class="FooterStyles__SocialContainer-sc-1ifsifd-5 jxtmol">
+                            <a href="https://github.com/Anuragtawaniya" class="HeaderStyles__SocialIcons-sc-9w0vkp-7 dpkQLo">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/anurag-tawaniya-7860741a0/" class="HeaderStyles__SocialIcons-sc-9w0vkp-7 dpkQLo">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/anuragt.js" class="HeaderStyles__SocialIcons-sc-9w0vkp-7 dpkQLo">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.twitter.com/anuragtawaniya" class="HeaderStyles__SocialIcons-sc-9w0vkp-7 dpkQLo">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm215.3 337.7c.3 4.7.3 9.6.3 14.4 0 146.8-111.8 315.9-316.1 315.9-63 0-121.4-18.3-170.6-49.8 9 1 17.6 1.4 26.8 1.4 52 0 99.8-17.6 137.9-47.4-48.8-1-89.8-33-103.8-77 17.1 2.5 32.5 2.5 50.1-2a111 111 0 0 1-88.9-109v-1.4c14.7 8.3 32 13.4 50.1 14.1a111.13 111.13 0 0 1-49.5-92.4c0-20.7 5.4-39.6 15.1-56a315.28 315.28 0 0 0 229 116.1C492 353.1 548.4 292 616.2 292c32 0 60.8 13.4 81.1 35 25.1-4.7 49.1-14.1 70.5-26.7-8.3 25.7-25.7 47.4-48.8 61.1 22.4-2.4 44-8.6 64-17.3-15.1 22.2-34 41.9-55.7 57.6z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
-    </footer>
-<script>
-    $(window).load(function() {
-     $('#overlay').addClass('hide');
-    });
-</script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-</bod>
-
+        <script id="__NEXT_DATA__" type="application/json">
+            { "props": { "pageProps": {} }, "page": "/", "query": {}, "buildId": "HBJTJnAzlh1nGSQkR8WpO", "nextExport": true, "autoExport": true, "isFallback": false }
+        </script>
+        <script nomodule="" src="/_next/static/chunks/polyfills-eef578260fd80f8fff94.js"></script>
+        <script src="/_next/static/chunks/webpack-189c53927ffd3caf09c3.js" async=""></script>
+        <script src="/_next/static/chunks/framework-92300432a1172ef1338b.js" async=""></script>
+        <script src="/_next/static/chunks/main-71948af4b0f09c0fc30e.js" async=""></script>
+        <script src="/_next/static/chunks/pages/_app-94471bebfc126e3cb1ed.js" async=""></script>
+        <script src="/_next/static/chunks/d0447323-6003fb0c88d5db50766e.js" async=""></script>
+        <script src="/_next/static/chunks/95b64a6e-4837f896f516a58e8f77.js" async=""></script>
+        <script src="/_next/static/chunks/70b165ca-decf29ddf1716276a3dd.js" async=""></script>
+        <script src="/_next/static/chunks/d7eeaac4-ffe659128ba47ca287a4.js" async=""></script>
+        <script src="/_next/static/chunks/pages/index-44710a0633a3e48d5727.js" async=""></script>
+        <script src="/_next/static/HBJTJnAzlh1nGSQkR8WpO/_buildManifest.js" async=""></script>
+        <script src="/_next/static/HBJTJnAzlh1nGSQkR8WpO/_ssgManifest.js" async=""></script>
+    </body>
 </html>
